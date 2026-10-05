@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5RBL3QDF');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release Notes — The Shot Clock — Rack Discipline LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCKJXLFPCS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SCKJXLFPCS');
+  </script>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RBL3QDF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header class="site-header">
+    <a class="site-header__brand" href="index.html">
+      <img src="img/RD_HOR_DARK_RED.png" alt="Rack Discipline LLC">
+    </a>
+    <nav class="site-nav" aria-label="Products">
+      <a href="https://bracketology.rackdisciplineusa.com">Bracketology</a>
+      <a href="index.html" aria-current="page">Shot Clock</a>
+      <a href="https://captainslog.rackdisciplineusa.com">Captain's Log</a>
+      <a href="https://scorekeeper.rackdisciplineusa.com">Scorekeeper</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero__product-mark" src="img/Clock logo.png" alt="The Shot Clock app icon">
+      <p class="hero__audience">Version 26.2</p>
+      <h1>The Shot Clock</h1>
+      <p class="hero__lede">Release notes. Need help?
+        <a href="mailto:info@rackdisciplineusa.com">info@rackdisciplineusa.com</a></p>
+      <div class="hero__actions">
+        <a class="pill-link" href="index.html">Back to product page</a>
+      </div>
+    </section>
+
+    <section class="section notes-list">
+      <article class="note feature">
+        <div class="feature__copy" style="grid-column: 1 / -1;">
+          <h3>Version 26.2</h3>
+          <p class="note__date">Released October 31, 2025</p>
+          <p>This release introduces meaningful behavior changes. <strong>Please read carefully.</strong></p>
+          <p>Functionality is aligned with Shot Clock procedures in the CSI Rule Book, with improved layout for everyday use. Examples show iPhone; iPad portrait matches that layout. Landscape on iPad uses the same controls with more screen space.</p>
+          <p>Screenshots show iOS 26. The Shot Clock runs on <strong>iOS 16 and up</strong> on iPhone and iPad — older OS versions may look different but behave the same.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__media">
+          <a href="screenshots/V26.2 Timer 0.png" target="_blank" rel="noopener">
+            <img class="screenshot" src="screenshots/V26.2 Timer 0.png" alt="Timer view">
+          </a>
+        </div>
+        <div class="feature__copy">
+          <h3>Starting and restarting the timer</h3>
+          <p>There is no separate Start button. Tap anywhere in the header to start or restart the timer — or enable <strong>Start Timer on Player Change</strong> so the timer restarts when you switch players.</p>
+          <p>On first load the timer shows zero. Tap the header to start; tap again to restart from the configured shot time (e.g. 30 seconds).</p>
+          <p><strong>Important:</strong> Break still restarts from the Break Timer value (if set) and resets extension counters.</p>
+          <p><strong>Example:</strong> For CSI league play, set Break Timer to the CSI Rule Book value (45 seconds) for the first shot after the break when that rule applies.</p>
+        </div>
+      </article>
+
+      <article class="feature feature--flip">
+        <div class="feature__media">
+          <a href="screenshots/V26.2 League Settings.png" target="_blank" rel="noopener">
+            <img class="screenshot" src="screenshots/V26.2 League Settings.png" alt="League settings">
+          </a>
+        </div>
+        <div class="feature__copy">
+          <h3>Break timer behaviour</h3>
+          <p>If Break Timer is <strong>0</strong>, Break does not restart the shot clock — it only resets extension counters. That matches CSI rules where the first shot after the break is not on the clock.</p>
+          <p><strong>Important:</strong> Shot Timer and Extension sliders can also change Break Timer when you first configure. Be careful not to overwrite Break Timer when you only meant to change shot time.</p>
+          <p><strong>Example one:</strong> Professional — Shot Timer / Extension 30s; Break Timer / Extension 60s.</p>
+          <p><strong>Example two:</strong> BCA / USAPL — Shot Timer / Extension 45s; Break Timer / Extension 0s.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__media">
+          <a href="screenshots/V26.2 Push.png" target="_blank" rel="noopener">
+            <img class="screenshot" src="screenshots/V26.2 Push.png" alt="Push button">
+          </a>
+        </div>
+        <div class="feature__copy">
+          <h3>Break and Push</h3>
+          <p>After Break, the Break control becomes <strong>Push</strong>. Push resets to the Break Timer value (if set) and switches player <em>without</em> resetting extension counters — for the case where the breaker pushes and the incoming player should get the same break clock.</p>
+          <p><strong>Example:</strong> Professional match — Player 1 gets 60s on the break, then pushes; Player 2 also gets 60s (not the regular 30s shot).</p>
+        </div>
+      </article>
+
+      <article class="feature feature--flip">
+        <div class="feature__media">
+          <a href="screenshots/V26.2 Config Detail.png" target="_blank" rel="noopener">
+            <img class="screenshot" src="screenshots/V26.2 Config Detail.png" alt="Config detail">
+          </a>
+        </div>
+        <div class="feature__copy">
+          <h3>Extra extension</h3>
+          <p>Allows one additional extension beyond the usual one-per-rack limit — for CSI hill-hill final rack rules. The Extra Extension control appears in the toolbar when enabled in Config Detail.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__media">
+          <a href="screenshots/V26.2 Timer.png" target="_blank" rel="noopener">
+            <img class="screenshot" src="screenshots/V26.2 Timer.png" alt="Timer with score">
+          </a>
+        </div>
+        <div class="feature__copy">
+          <h3>Keeping score</h3>
+          <p>Enable scoring in the configuration to show score controls in the Timer view. Tap a side to record a rack win; tap Set to begin a new set from the highest rack score.</p>
+          <p><strong>Important:</strong> Scores and extensions can be edited in Player Manager.</p>
+        </div>
+      </article>
+
+      <article class="feature feature--flip">
+        <div class="feature__media">
+          <a href="screenshots/V26.2 Player Manager.png" target="_blank" rel="noopener">
+            <img class="screenshot" src="screenshots/V26.2 Player Manager.png" alt="Player Manager">
+          </a>
+        </div>
+        <div class="feature__copy">
+          <h3>Player Manager</h3>
+          <p>Replace default Player 1 / Player 2 labels with real names, and adjust or reset extension counters and scores as needed.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__media">
+          <a href="screenshots/V26.2 iPad Timer.png" target="_blank" rel="noopener">
+            <img class="screenshot" src="screenshots/V26.2 iPad Timer.png" alt="iPad landscape timer">
+          </a>
+        </div>
+        <div class="feature__copy">
+          <h3>Landscape mode (iPad)</h3>
+          <p>iPad landscape rearranges timer controls to use the wider layout — especially helpful with larger Dynamic Type sizes.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:info@rackdisciplineusa.com">info@rackdisciplineusa.com</a>
+    </div>
+    <p class="site-footer__copy">Copyright Rack Discipline LLC 2026</p>
+  </footer>
+</body>
+</html>
