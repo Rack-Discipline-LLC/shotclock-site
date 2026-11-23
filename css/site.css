@@ -351,10 +351,21 @@ body { overflow-x: clip; }  /* the band extends to the viewport edges; never let
   width: 100%;
   max-width: 22rem;
   margin: 0 auto;
-  border-radius: var(--radius);
+  height: auto;  /* keeps the aspect ratio when the img tag carries width/height attributes */
+  border-radius: 1.75rem;  /* soft, phone-like corners on every site */
   box-shadow: var(--shadow);
   background: var(--paper-elevated);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Desktop-window (macOS) screenshots: gentler corners than a phone. */
+.screenshot--window {
+  border-radius: 0.75rem;
+}
+
+/* Landscape (iPad) screenshot: wider than the portrait phone shots so it isn't dwarfed by them. */
+.screenshot--wide {
+  max-width: 34rem;
 }
 
 .screenshot:hover {
