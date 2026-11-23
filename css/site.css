@@ -260,24 +260,22 @@ main {
   transform: translateY(-1px);
 }
 
-/* —— Root page: grey full-width hero like the blog's cover (body.home), no header logo —— */
-.home { overflow-x: clip; }  /* the grey band extends past the viewport; never let it create a horizontal scrollbar */
-.home .site-header__brand { display: none; }
+/* —— Grey full-width hero band, like the blog's cover (every page with a .hero) —— */
+body { overflow-x: clip; }  /* the band extends to the viewport edges; never let it create a horizontal scrollbar */
 
-.home .hero {
+.hero {
   overflow: visible;
-  padding: clamp(4rem, 12vw, 7.5rem) 0;
+  padding: clamp(3.5rem, 10vw, 6.5rem) 0;
   isolation: isolate;
 }
 
-.home .hero::before {
+.hero::before {
   content: "";
   position: absolute;
   inset: 0 calc(50% - 50vw);
   z-index: -1;
-  background: #e9eaec;
+  background: #d9dbde;
 }
-
 
 /* —— Sections —— */
 .section {
