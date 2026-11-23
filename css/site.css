@@ -203,7 +203,7 @@ main {
 .hero__lede {
   margin: 0 auto 1.75rem;
   max-width: 34rem;
-  color: var(--ink-muted);
+  color: rgba(21, 23, 26, 0.85);
   font-size: 1.1rem;
   animation: mark-in 0.7s 0.16s ease both;
 }
@@ -274,7 +274,7 @@ body { overflow-x: clip; }  /* the band extends to the viewport edges; never let
   position: absolute;
   inset: 0 calc(50% - 50vw);
   z-index: -1;
-  background: #d9dbde;
+  background: linear-gradient(135deg, #c4c7cb 0%, #9ea2a8 50%, #686c72 100%);  /* soft diagonal, darkest in the bottom-right corner */
 }
 
 /* —— Sections —— */
