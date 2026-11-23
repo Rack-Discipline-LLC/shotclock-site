@@ -630,6 +630,10 @@ body { overflow-x: clip; }  /* the band extends to the viewport edges; never let
   margin-bottom: 0.85rem;
 }
 
+.app-slot .store-badge {
+  display: inline-block;  /* so the slot's text-align centers the badge under the icon */
+}
+
 /* —— Legal / prose pages —— */
 .prose-page {
   width: min(100% - 2rem, 46rem);
