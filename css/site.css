@@ -602,8 +602,35 @@ body { overflow-x: clip; }  /* the band extends to the viewport edges; never let
   margin-top: 0.5rem;
 }
 
-.family--learning .family__grid {
+/* Sections with a single card: one centered column instead of a half-empty two-column grid. */
+.family--learning .family__grid,
+.family--business .family__grid {
+  grid-template-columns: 1fr;
   max-width: 32rem;
+}
+
+.family--business {
+  margin-top: 0.5rem;
+}
+
+/* A white-on-transparent wordmark (FoundRE): the logo is the card's heading, shown on a dark tile. */
+.family-item--wordmark {
+  grid-template-columns: 1fr;
+}
+
+.family-item--wordmark .family-item__name {
+  margin: 0.3rem 0 0.55rem;
+}
+
+.family-item img.family-item__wordmark {
+  display: block;
+  width: auto;
+  height: 1.8rem;
+  box-sizing: content-box;
+  padding: 0.9rem 1.2rem;
+  background: #0c1445;
+  border-radius: 0.7rem;
+  box-shadow: none;
 }
 
 /* —— Apps pair (Bracketology + Companion) —— */
